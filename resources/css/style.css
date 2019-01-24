@@ -125,10 +125,10 @@ header .flex {
 }
 
 .title {
+  background-color: cadetblue;
+  color: white;
   max-width: 10rem;
   padding: 0.5rem 1.25rem;
-  background-color: cadetblue;
   font-weight: bold;
-  color: white;
   text-transform: uppercase;
 }
