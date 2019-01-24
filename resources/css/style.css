@@ -83,7 +83,7 @@ header .flex {
   background-color: white;
 }
 
-/*Tablet Styles */
+/*Fixed Header Styles */
 @media only screen and (max-width: 1024px) {
   header {
     height: 22rem;
@@ -105,11 +105,52 @@ header .flex {
   }
 }
 
+/* Mobile Styles */
+@media only screen and (max-width: 700px) {
+  .menu ul {
+    display: none;
+  }
+
+  .menu ul.truncated-menu {
+    display: block;
+  }
+
+  header section span {
+    display: none;
+  }
+
+  header {
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  .main-banner {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 9rem auto 0 auto;
+    text-align: center;
+  }
+
+  .main-banner h1 {
+    font-size: 1rem;
+  }
+}
+
 /* Supporting Styles */
 
 .supporting {
   display: flex;
   justify-content: center;
+}
+
+/* Mobile Style */
+@media only screen and (max-width: 700px) {
+  .supporting {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 3rem;
+  }
 }
 
 /* Service Styles */
@@ -134,6 +175,15 @@ header .flex {
   width: 3.5rem;
 }
 
+/* Mobile Styles */
+@media only screen and (max-width: 700px) {
+  .service {
+    height: auto;
+    margin: .77rem;
+    font-size: .77rem;
+  }
+}
+
 /* Infomation Styles */
 
 .info {
@@ -155,6 +205,25 @@ header .flex {
   text-transform: uppercase;
 }
 
+/* Mobile Styles */
+@media only screen and (max-width: 700px) {
+  .info {
+    width: 100%;
+  }
+
+  .info .title {
+    width: 100%;
+    max-width: none;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .info p {
+    padding: 1rem;
+    font-size: .77rem;
+  }
+}
+
 /* Footer Styles */
 
 footer {
@@ -168,4 +237,15 @@ footer img {
   height: 1.5rem;
   margin-left: 2rem;
   margin-right: 1rem;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 700px) {
+  footer {
+    justify-content: center;
+  }
+
+  footer div {
+    display: none;
+  }
 }
